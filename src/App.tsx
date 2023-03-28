@@ -7,7 +7,8 @@ import { Contact } from './screens/Contact';
 function App() {
   return (
     <div className='container mt-10'>
-    <header className='mb-5'>
+    <header className='flex justify-between items-center mb-5'>
+      <img className='w-12' src="img/logo.png" alt="logo du site necron" />
       <nav className='flex justify-end'>
         <NavLink className='mr-3' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'})} to='/'>Accueil</NavLink>
         <NavLink className='mr-3' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'})} to='/ressources'>Ressources</NavLink>
